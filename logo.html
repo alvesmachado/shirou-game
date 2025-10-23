@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Symbols+2&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root {
+            --c-orange-light: #B83430;
+            --c-orange: #DB3F39;
+            --c-orange-dark: #3D1110;
+
+            --c-lighter: #6E584F;
+            --c-normal: #3B3634 ;
+            --c-dark: #332823;
+
+            --c-grey-light: #FFFFFF;
+            --c-grey: #ececec;
+            --c-grey-dark: #d4d4d4;
+            --f-sym: 'Noto Sans Symbols 2', sans-serif; 
+        }
+        body {
+            font-family: 'Noto Sans Symbols 2', sans-serif;
+            background-color: greenyellow;
+        }
+
+        div {
+            margin: 124px;
+            width: 124px;
+            height: 124px;
+            border-radius: 30px;
+            background-image: linear-gradient(to right, var(--c-dark), var(--c-lighter));
+            position: relative;
+        }
+
+        h1 {
+            color: var(--c-grey-light);
+            font-size: 124px;
+        }
+
+        h1::before {
+            content: "\2694";
+            position: absolute;
+            top: -25%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1></h1>
+    </div>
+</body>
+</html>

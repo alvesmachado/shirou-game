@@ -1,0 +1,381 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Symbols+2&display=swap');
+
+:root {
+    --c-orange-light: #B83430;
+    --c-orange: #DB3F39;
+    --c-orange-dark: #3D1110;
+
+    --c-lighter: #6E584F;
+    --c-normal: #3B3634 ;
+    --c-dark: #332823;
+
+    --c-grey-light: #FFFFFF;
+    --c-grey: #ececec;
+    --c-grey-dark: #d4d4d4;
+    
+
+    --f-mont: 'Montserrat', sans-serif; 
+    --f-sym: 'Noto Sans Symbols 2', sans-serif; 
+    
+
+    /* Header Var */
+
+    --h-logo: 48px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: var(--f-mont);
+    color: var(--c-dark);
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100vh;
+}
+
+hr {
+    border: 1px solid var(--c-grey);
+}
+
+/* [header] Config */
+
+.header {
+    width: 100%;
+}
+
+.header-content {
+    height: var(--h-logo);
+    width: 1000px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* [header-left] Config */
+
+.header-left {
+    display: flex;
+}
+
+
+.header-logo{
+    width: var(--h-logo);
+    height: var(--h-logo);
+    overflow: hidden;  
+    border-radius: 25%;
+}
+
+.header-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.header-logo img:hover {
+    transform: scale(0.92);
+}
+
+.header-nav {
+    height: var(--h-logo);
+    position: relative;
+    margin: 0px 10px;
+}
+
+.menu-box {
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.menu-link {
+    margin: 0px 10px;
+    color: var(--c-normal);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1px 10px;
+    border-radius: 5px;
+}
+
+#menu-jogos:before{
+    font-family: var(--f-sym);
+    content: "\2680\00A0";
+    font-size: 1.5em;
+}
+
+#menu-populares:before{
+    font-family: var(--f-sym);
+    content: "\2681\00A0";
+    font-size: 1.5em;
+}
+
+#menu-criar:before{
+    font-family: var(--f-sym);
+    content: "\2682\00A0";
+    font-size: 1.5em;
+}
+
+.menu-link:hover {
+    color: var(--c-orange-dark);
+}
+
+.menu-link:active {
+    color: var(--c-orange-light);
+}
+
+/* [header-right] Config */
+
+.header-right {
+    position: relative;
+}
+
+.button-sign {
+    position: absolute;
+    top: 50%;
+    transform: translate(-100%, -50%);
+
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 5px;
+    color: var(--c-grey-light);
+    background-image: linear-gradient(to right, var(--c-orange-dark), var(--c-orange-light));
+
+}
+
+
+.button-sign:hover {
+    text-decoration: underline;
+
+}
+
+/* [Main] Config */
+
+.main {
+    background-color: var(--c-grey-light);
+}
+
+.main section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+/* [section-img] Config */
+
+.section-img-content {
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.section-img-title {
+    color: var(--c-grey-light);
+    margin-bottom: 5vh;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.section-img-button {
+    background: linear-gradient(to right, var(--c-orange-dark), var(--c-orange-light));
+    color: var(--c-grey-light);
+
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.section-img-button:hover {
+    text-decoration: underline;
+}
+
+.section-img-button:active {
+    color: var(--c-grey-dark);
+}
+
+/* [section-img(ID)] Config */
+
+#section-img-post-game {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Imagens/chess.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section-img-tutorial {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Imagens/dice.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* [section-list] Config */
+
+.section-list {
+    width: 1000px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.list-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    position: relative;
+}
+
+.list-title {
+    border-left: 2px solid var(--c-dark);
+    padding-left: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.button-more {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 5px;
+    color: var(--c-grey-light);
+    background-image: linear-gradient(to right, var(--c-orange-dark), var(--c-orange-light));
+}
+
+.button-more:hover {
+    text-decoration: underline;
+}
+
+.list-buttom {
+    padding-top: 10px;
+    height: 250px;
+    position: relative;
+    
+}
+
+.list-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style-type: none;
+    display: flex;
+}
+
+.list-box li {
+    margin: 10px;
+}
+
+
+.list-link {
+    text-decoration: none;
+}
+
+.list-link:hover .list-game-name{
+    color: var(--c-orange-dark);
+}
+
+.list-link:hover .list-autor-name{
+    color: var(--c-orange-light);
+}
+
+.list-link:hover img {
+    transform: scale(1.1);
+}
+
+.list-img-container{
+    width: 140px;
+    height: 180px;
+    overflow: hidden; 
+    margin-bottom: 5px;  
+}
+
+.list-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: 0.5s;
+}
+
+
+.list-game-name {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.list-autor-name {
+    color: var(--c-lighter);
+    text-align: center;
+    font-size: 1em;
+    font-weight: light;
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+/* [footer] Config */
+
+.footer {
+    position: relative;
+    padding: 10px;
+    height: 42px;
+    background: linear-gradient(to right, var(--c-orange-dark), var(--c-orange-light));
+}
+
+.footer-line {
+    font-size: 0.85em;
+    display: flex;
+    max-width: 1000px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.footer-line a {
+    color: var(--c-grey-light);
+    font-weight: bold;
+    margin: 0px 5px;
+    text-decoration: none;
+}
+
+.footer-line a:hover {
+    color: var(--c-grey-dark);
+}
+
+.footer-line p {
+    color: var(--c-grey-light);
+    font-weight: light;
+    margin: 0px 5px;
+}
+
+#f-line2 {
+    transform: translate(-50%, 25%);
+}
