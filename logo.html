@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Symbols+2&display=swap');
 
@@ -27,22 +28,25 @@
             --f-sym: 'Noto Sans Symbols 2', sans-serif; 
         }
         body {
-            font-family: 'Noto Sans Symbols 2', sans-serif;
-            background-color: greenyellow;
+            background-color: rgb(31, 33, 43);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
         }
 
-        div {
-            margin: 124px;
-            width: 124px;
-            height: 124px;
-            border-radius: 30px;
-            background-image: linear-gradient(to right, var(--c-dark), var(--c-lighter));
+        .logo {
+            font-family: var(--f-sym);
+            margin: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 3px;
+            background-image: linear-gradient(to left, var(--c-orange), var(--c-orange-dark));
             position: relative;
         }
 
         h1 {
+            
             color: var(--c-grey-light);
-            font-size: 124px;
+            font-size: 40px;
         }
 
         h1::before {
@@ -52,11 +56,91 @@
             left: 50%;
             transform: translate(-50%, 0%);
         }
+
+        td, th {
+            padding: 10px;
+            color: rgb(182, 187, 211);
+            border: 1px solid rgb(182, 187, 211);
+            background-color: rgb(47, 50, 65);
+        }
+
+        th {
+            text-align: center;
+            vertical-align: middle;
+            
+        }
+        table {
+            border-collapse: collapse;
+        }
+
+        .game a {
+            color: rgb(182, 187, 211);
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        .game a:hover {
+            text-decoration: underline;
+        }
+
+        .game a:active {
+            color: rgb(255, 72, 72);
+        }
+
+        .gamers {
+            font-style: italic;
+        }
+
+        .gamers strong{
+            font-style: normal;
+        }
     </style>
 </head>
 <body>
-    <div>
+    <header class="logo">
         <h1></h1>
-    </div>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Jogo</th>
+                    <th>Jogadores</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="happy-wheels">
+                    <td class="game"><a href="https://poki.com/br/g/happy-wheels"></a></td>
+                    <td class="gamers"><strong></strong> jogadores</td>
+                </tr>
+
+                <tr id="papas-burgeria">
+                    <td class="game"><a href="https://poki.com/br/g/papas-burgeria"></a></td>
+                    <td class="gamers"><strong></strong> jogadores</td>
+                </tr>
+
+                <tr id="fancy-pants">
+                    <td class="game"><a href="https://poki.com/br/g/fancy-pants"></a></td>
+                    <td class="gamers"><strong></strong> jogadores</td>
+                </tr>
+
+                <tr id="fleeing-the-complex">
+                    <td class="game"><a href="https://poki.com/br/g/fleeing-the-complex"></a></td>
+                    <td class="gamers"><strong></strong> jogadores</td>
+                </tr>
+
+                <tr id="roubando-o-diamante">
+                    <td class="game"><a href="https://poki.com/br/g/roubando-o-diamante"></a></td>
+                    <td class="gamers"><strong></strong> jogadores</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total de jogadores:</td>
+                    <td class="gamers"><strong>65</strong> jogadores</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
 </body>
 </html>

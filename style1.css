@@ -1,0 +1,79 @@
+:root {
+    --j1-t: "Happy Wheels";
+    --j1-j: "20";
+
+    --j2-t: "Papa's Burgeria";
+    --j2-j: "16";
+
+    --j3-t: "Fancy Pants";
+    --j3-j: "14";
+
+    --j4-t: "Fleeing The Complex";
+    --j4-j: "10";
+
+    --j5-t: "Roubando O Diamante";
+    --j5-j: "5";
+
+    --j6-t: "Red Ball 4";
+    --j6-j: "3";
+}
+
+https://poki.com/br/g/red-ball-4
+
+#happy-wheels .game a::after{
+    content: var(--j1-t);
+}
+
+#happy-wheels .gamers strong::before{
+    content: var(--j1-j);
+}
+
+/* ------------------- */
+
+#papas-burgeria .game a::after{
+    content: var(--j2-t);
+}
+
+#papas-burgeria .gamers strong::before{
+    content: var(--j2-j);
+}
+
+/* ------------------- */
+
+#fancy-pants .game a::after{
+    content: var(--j3-t);
+}
+
+#fancy-pants .gamers strong::before{
+    content: var(--j3-j);
+}
+
+/* ------------------- */
+
+#fleeing-the-complex .game a::after{
+    content: var(--j4-t);
+}
+
+#fleeing-the-complex .gamers strong::before{
+    content: var(--j4-j);
+}
+
+/* ------------------- */
+
+#roubando-o-diamante .game a::after{
+    content: var(--j5-t);
+}
+
+#roubando-o-diamante .gamers strong::before{
+    content: var(--j5-j);
+}
+
+/* ------------------- */
+
+#roubando-o-diamante .game a::after{
+    content: var(--j6-t);
+}
+
+#roubando-o-diamante .gamers strong::before{
+    content: var(--j6-j);
+}
