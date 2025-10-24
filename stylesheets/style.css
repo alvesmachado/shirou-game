@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Symbols+2&display=swap');
 
 :root {
-    --c-orange-light: #B83430;
-    --c-orange: #DB3F39;
+    --c-orange-light: #DB3F39;
+    --c-orange: #B83430;
     --c-orange-dark: #3D1110;
 
     --c-lighter: #6E584F;
@@ -14,6 +14,9 @@
     --c-grey: #ececec;
     --c-grey-dark: #d4d4d4;
     
+    --c-one: green ;
+    --c-two: gold;
+    --c-three: #ff3600;
 
     --f-mont: 'Montserrat', sans-serif; 
     --f-sym: 'Noto Sans Symbols 2', sans-serif; 
@@ -223,10 +226,17 @@ hr {
     background-attachment: fixed;
 }
 
+#section-img-aleatorio {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../Imagens/roulette.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 /* [section-list] Config */
 
 .section-list {
     width: 1000px;
+    min-height: 331px;
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -266,7 +276,7 @@ hr {
     text-decoration: underline;
 }
 
-.list-buttom {
+.list-bottom {
     padding-top: 10px;
     height: 250px;
     position: relative;
@@ -339,6 +349,113 @@ hr {
     text-overflow: ellipsis; 
 }
 
+/* [section-list-col] Config */
+
+.section-list-col {
+    display: flex;
+    width: 1320px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.section-list-col > div {
+    width: 440px;
+    margin: 0px 20px;
+}
+
+.section-list-col > div > div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    position: relative;
+}
+
+.section-list-col h1 {
+    font-size: 24px;
+    max-width: 220px;
+    min-height: 58px;
+}
+
+.section-list-col .button-more {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-110%);
+
+}
+
+/* [table] Config */
+
+.list-col-bottom {
+    display: block;
+    padding-top: 10px;
+}
+
+.section-table {
+    width: 400px;
+    border-collapse: collapse; 
+    
+}
+
+.section-table td {
+    border-bottom: 2px solid var(--c-grey);
+    padding: 10px;
+}
+
+.section-table tr {
+    height: var(--h-logo);
+    
+}
+
+.section-table .last-news-tr {
+    height: 80px;
+}
+
+
+.position-table {
+    font-weight: bold;
+}
+
+#position-table-one {
+    color: var(--c-one);
+}
+
+#position-table-two {
+    color: var(--c-two);
+}
+
+#position-table-three {
+    color: var(--c-three);
+}
+
+.title-table a {
+    color: var(--c-dark);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+tr:hover a {
+    text-decoration: underline;
+    
+}
+
+.title-table a:active {
+    color: var(--c-lighter);
+}
+
+.info-table {
+    color: var(--c-orange);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.last-news-box .info-table {
+    font-weight: normal;
+
+}
+
 /* [footer] Config */
 
 .footer {
@@ -379,3 +496,4 @@ hr {
 #f-line2 {
     transform: translate(-50%, 25%);
 }
+
