@@ -1,79 +1,139 @@
 :root {
     --j1-t: "Happy Wheels";
     --j1-j: "20";
+    --j1-a: "James Bonacci";
 
     --j2-t: "Papa's Burgeria";
     --j2-j: "16";
+    --j2-a: "Flipline Studios";
 
     --j3-t: "Fancy Pants";
     --j3-j: "14";
+    --j3-a: "Borne Games";
 
     --j4-t: "Fleeing The Complex";
     --j4-j: "10";
+    --j4-a: "Innersloth";
 
     --j5-t: "Roubando O Diamante";
     --j5-j: "5";
+    --j5-a: "Innersloth";
 
     --j6-t: "Red Ball 4";
     --j6-j: "3";
+    --j6-a: "Yohoho Games";
+
 }
 
-https://poki.com/br/g/red-ball-4
-
-#happy-wheels .game a::after{
+#happy-wheels .game a::after, .play-now-box tr:nth-child(1) > .title-table a::after{
     content: var(--j1-t);
 }
 
-#happy-wheels .gamers strong::before{
+#happy-wheels .gamers strong::before, .play-now-box tr:nth-child(1) > .info-table::before{
     content: var(--j1-j);
 }
 
+.list-box li:nth-child(1) .list-game-name::after{
+    content: var(--j1-t);
+}
+
+.list-box li:nth-child(1) .list-autor-name::after{
+    content: var(--j1-a);
+}
+
+
 /* ------------------- */
 
-#papas-burgeria .game a::after{
+#papas-burgeria .game a::after, .play-now-box tr:nth-child(2) > .title-table a::after{
     content: var(--j2-t);
 }
 
-#papas-burgeria .gamers strong::before{
+#papas-burgeria .gamers strong::before, .play-now-box tr:nth-child(2) > .info-table::before{
     content: var(--j2-j);
 }
 
+.list-box li:nth-child(2) .list-game-name::after{
+    content: var(--j2-t);
+}
+
+.list-box li:nth-child(2) .list-autor-name::after{
+    content: var(--j2-a);
+}
+
 /* ------------------- */
 
-#fancy-pants .game a::after{
+#fancy-pants .game a::after, .play-now-box tr:nth-child(3) > .title-table a::after{
     content: var(--j3-t);
 }
 
-#fancy-pants .gamers strong::before{
+#fancy-pants .gamers strong::before, .play-now-box tr:nth-child(3) > .info-table::before{
     content: var(--j3-j);
 }
 
+.list-box li:nth-child(3) .list-game-name::after{
+    content: var(--j3-t);
+}
+
+.list-box li:nth-child(3) .list-autor-name::after{
+    content: var(--j3-a);
+}
+
 /* ------------------- */
 
-#fleeing-the-complex .game a::after{
+#fleeing-the-complex .game a::after, .play-now-box tr:nth-child(4) > .title-table a::after{
     content: var(--j4-t);
 }
 
-#fleeing-the-complex .gamers strong::before{
+#fleeing-the-complex .gamers strong::before, .play-now-box tr:nth-child(4) > .info-table::before{
     content: var(--j4-j);
 }
 
+.list-box li:nth-child(4) .list-game-name::after{
+    content: var(--j4-t);
+}
+
+.list-box li:nth-child(4) .list-autor-name::after{
+    content: var(--j4-a);
+}
+
 /* ------------------- */
 
-#roubando-o-diamante .game a::after{
+#roubando-o-diamante .game a::after, .play-now-box tr:nth-child(5) > .title-table a::after{
     content: var(--j5-t);
 }
 
-#roubando-o-diamante .gamers strong::before{
+#roubando-o-diamante .gamers strong::before, .play-now-box tr:nth-child(5) > .info-table::before{
     content: var(--j5-j);
+}
+
+.list-box li:nth-child(5) .list-game-name::after{
+    content: var(--j5-t);
+}
+
+.list-box li:nth-child(5) .list-autor-name::after{
+    content: var(--j5-a);
 }
 
 /* ------------------- */
 
-#roubando-o-diamante .game a::after{
+#red-ball-4 .game a::after, .play-now-box tr:nth-child(6) > .title-table a::after{
     content: var(--j6-t);
 }
 
-#roubando-o-diamante .gamers strong::before{
+#red-ball-4 .gamers strong::before, .play-now-box tr:nth-child(6) > .info-table::before{
     content: var(--j6-j);
+}
+
+.list-box li:nth-child(6) .list-game-name::after{
+    content: var(--j6-t);
+}
+
+.list-box li:nth-child(6) .list-autor-name::after{
+    content: var(--j6-a);
+}
+
+/* ------------------- */
+
+tfoot .gamers strong::before{
+    content: calc(var(--j1-j) + var(--j2-j) + var(--j3-j) + var(--j4-j) + var(--j5-j) + var(--j6-j));
 }

@@ -67,10 +67,18 @@
         th {
             text-align: center;
             vertical-align: middle;
+            background-color: rgb(29, 31, 41);
+        }
+
+        tfoot th {
+            text-align: start;
+            vertical-align: middle;
             
         }
+
         table {
             border-collapse: collapse;
+            margin: 10px;
         }
 
         .game a {
@@ -89,6 +97,7 @@
 
         .gamers {
             font-style: italic;
+            text-align: end;
         }
 
         .gamers strong{
@@ -104,8 +113,8 @@
         <table>
             <thead>
                 <tr>
-                    <th>Jogo</th>
-                    <th>Jogadores</th>
+                    <th scope="col">Nome do jogo</th>
+                    <th scope="col">Jogando agora</th>
                 </tr>
             </thead>
             <tbody>
@@ -133,11 +142,16 @@
                     <td class="game"><a href="https://poki.com/br/g/roubando-o-diamante"></a></td>
                     <td class="gamers"><strong></strong> jogadores</td>
                 </tr>
+
+                <tr id="red-ball-4">
+                    <td class="game"><a href="https://poki.com/br/g/red-ball-4"></a></td>
+                    <td class="gamers"><strong></strong> jogadores</td>
+                </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <td>Total de jogadores:</td>
-                    <td class="gamers"><strong>65</strong> jogadores</td>
+                    <th scope="row">Total de jogadores:</td>
+                    <th class="gamers"><strong>65</strong> jogadores</td>
                 </tr>
             </tfoot>
         </table>

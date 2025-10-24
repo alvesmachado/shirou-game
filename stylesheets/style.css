@@ -449,6 +449,7 @@ tr:hover a {
     color: var(--c-orange);
     font-weight: bold;
     font-style: italic;
+    text-align: end;
 }
 
 .last-news-box .info-table {
