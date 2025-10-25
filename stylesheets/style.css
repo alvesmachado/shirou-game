@@ -54,7 +54,7 @@ hr {
 
 .header-content {
     height: var(--h-logo);
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
     padding: 10px;
     display: flex;
