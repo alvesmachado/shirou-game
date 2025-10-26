@@ -235,7 +235,7 @@ hr {
 /* [section-list] Config */
 
 .section-list {
-    width: 1000px;
+    max-width: 1000px;
     min-height: 331px;
     margin: auto;
     padding-left: 10px;
@@ -257,12 +257,17 @@ hr {
     font-weight: bold;
 }
 
+.list-button {
+    position: relative;
+
+}
+
 .button-more {
     position: absolute;
     top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+    transform: translate(-100%, -50%);
 
+    width: 73px;
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
@@ -270,6 +275,7 @@ hr {
     border-radius: 5px;
     color: var(--c-grey-light);
     background-image: linear-gradient(to right, var(--c-orange-dark), var(--c-orange-light));
+
 }
 
 .button-more:hover {
@@ -353,18 +359,18 @@ hr {
 
 .section-list-col {
     display: flex;
-    width: 1320px;
+    max-width: 1320px;
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.section-list-col > div {
+.pay-week-box {
     width: 440px;
     margin: 0px 20px;
 }
 
-.section-list-col > div > div {
+.pay-week-top, .pay-week-bottom {
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
@@ -372,7 +378,7 @@ hr {
     position: relative;
 }
 
-.section-list-col h1 {
+.pay-week-top .list-title {
     font-size: 24px;
     max-width: 220px;
     min-height: 58px;
@@ -388,14 +394,18 @@ hr {
 
 /* [table] Config */
 
-.list-col-bottom {
+.pay-week-bottom {
     display: block;
     padding-top: 10px;
+    height: 241px;
+    overflow-y: auto;
 }
 
 .section-table {
+
     width: 400px;
     border-collapse: collapse; 
+
     
 }
 
@@ -408,11 +418,6 @@ hr {
     height: var(--h-logo);
     
 }
-
-.section-table .last-news-tr {
-    height: 80px;
-}
-
 
 .position-table {
     font-weight: bold;
@@ -452,9 +457,58 @@ tr:hover a {
     text-align: end;
 }
 
-.last-news-box .info-table {
-    font-weight: normal;
+/* [social] Config */
 
+.social-box {
+    min-width: 459px;
+    max-width: 838px;
+    margin-left: 32px;
+    margin-right: 10px;
+}
+
+.social-top {
+    min-height: 58px;
+    padding-bottom: 10px;
+}
+
+.social-top .list-title {
+    font-size: 24px;
+    max-width: 220px;
+    min-height: 58px;
+}
+
+.social-bottom {
+    padding: 10px;
+    
+}
+
+.social-bottom figure{
+
+    text-align: right;
+}
+
+.social-bottom img{
+    margin: 10px;
+    border-radius: 50%;
+    width: 64px;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.514);
+}
+
+.social-bottom img:hover{
+    transition: 0.3s;
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.514);
+}
+
+.social-bottom p {
+    margin-top: 10px;
+    text-indent: 24px;
+}
+
+#name-social {
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* [footer] Config */
