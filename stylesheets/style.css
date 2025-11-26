@@ -168,6 +168,7 @@ hr {
 /* [Main] Config */
 
 .main {
+    height: 100vh;
     background-color: var(--c-grey-light);
 }
 
@@ -509,6 +510,123 @@ tr:hover a {
     font-weight: bolder;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+/* [entrar] Config */
+
+
+.section-login {
+    max-width: 1000px;
+    min-height: 331px;
+    margin: 20px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+
+    display: flex;
+    background-color: var(--c-grey);
+    border-radius: 30px;
+}
+
+.login-text {
+    margin: 10px;
+    max-width: 480px;
+    min-width: 300px;
+    
+}
+
+.login-text h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--c-orange);
+    margin-bottom: 20px;
+}
+
+.login-text p {
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--c-dark);
+    margin-bottom: 20px;
+}
+
+.login-right {
+    margin: 10px;
+    min-width: 480px;
+    
+    position: relative;
+}
+
+.login-content {
+    min-width: 320px;
+    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login-content p{
+    margin: 10px;
+}
+
+.input-config{
+    height: 32px;
+    width: 400px;
+    font-size: 1.2em;
+}
+
+
+.login-esqueceu {
+    padding-bottom: 128px;
+
+}
+
+.login-esqueceu a{
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.login-button{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.login-button a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--c-orange);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin-right: 16px;
+
+}
+
+.login-button a:hover{
+    color: var(--c-orange);
+}
+
+.login-button input {
+    font-weight: bold;
+    background-color: var(--c-orange);
+    color: var(--c-grey);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+.login-button input:hover {
+    transition: 0.3s;
+    background-color: #c2433f;
+    color: #f0f0f0;
+}
+
+.login-button input:active {
+    transition: 0.3s;
+    background-color: #ca4844;
+    color: #f3f3f3;
 }
 
 /* [footer] Config */
