@@ -168,7 +168,7 @@ hr {
 /* [Main] Config */
 
 .main {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--c-grey-light);
 }
 
@@ -182,7 +182,6 @@ hr {
 .section-img-content {
     padding-top: 30vh;
     padding-bottom: 30vh;
-    width: 500px;
     text-align: center;
     margin: auto;
 }
@@ -287,6 +286,7 @@ hr {
     padding-top: 10px;
     height: 250px;
     position: relative;
+    overflow: hidden;
     
 }
 
@@ -296,6 +296,7 @@ hr {
     transform: translateX(-50%);
     list-style-type: none;
     display: flex;
+
 }
 
 .list-box li {
@@ -360,6 +361,8 @@ hr {
 
 .section-list-col {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     max-width: 1320px;
     margin: auto;
     padding-left: 10px;
@@ -367,7 +370,7 @@ hr {
 }
 
 .pay-week-box {
-    width: 440px;
+    width: 400px;
     margin: 0px 20px;
 }
 
@@ -461,7 +464,7 @@ tr:hover a {
 /* [social] Config */
 
 .social-box {
-    min-width: 459px;
+    flex: 1 1 400px;
     max-width: 838px;
     margin-left: 32px;
     margin-right: 10px;
